@@ -9,6 +9,6 @@ export class CarService {
   }
 
   getAll(): Observable<any> {
-    return this.http.get('https://bojja-sbhb.herokuapp.com/cool-cars);
+    return this.http.get('https://bojja-sbhb.herokuapp.com/cool-cars');
   }
 }
