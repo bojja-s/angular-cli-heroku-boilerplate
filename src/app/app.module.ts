@@ -5,8 +5,11 @@ import { HttpModule } from '@angular/http';
 import { CarService } from './shared/car/car.service';
 import { HttpClientModule } from '@angular/common/http';
 
+
 import { AppComponent } from './app.component';
 import { CarListComponent } from './car-list/car-list.component';
+import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,12 @@ import { CarListComponent } from './car-list/car-list.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    MatListModule,
+    MatToolbarModule    
   ],
   providers: [CarService],
   bootstrap: [AppComponent]
